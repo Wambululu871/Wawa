@@ -29,6 +29,10 @@
       overflow-x: hidden;
       cursor: none;
     }
+    @media (hover: none) and (pointer: coarse) {
+  body { cursor: auto; }
+  #cursor, #cursor-ring { display: none; }
+}
 
     /* ── Cursor ── */
     #cursor {
@@ -435,7 +439,7 @@
     <input id="gate-input" type="text" placeholder="your beautiful name…" autocomplete="off" spellcheck="false"/>
     <p class="gate-err" id="gate-err"></p>
   </div>
-  <p class="gate-hint">press enter</p>
+  <p class="gate-hint">Welcome</p>
 </div>
 
 <!-- ════ MAIN SITE ════ -->
