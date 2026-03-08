@@ -407,15 +407,14 @@
     @keyframes fadeUp  { from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)} }
     @keyframes fadeIn  { from{opacity:0}to{opacity:1} }
 
-    @media(max-width:600px){
+   @media(max-width:600px){
   .readonce-letter.revealed { max-height:5000px; }
   .moments::before { display:none; }
-  .moment { grid-template-columns:48px 1fr; align-items:start; }
-  .moment:nth-child(odd) .moment-content,
-  .moment:nth-child(even) .moment-content { grid-column:2; text-align:left; }
-  .moment:nth-child(odd) .moment-dot,
-  .moment:nth-child(even) .moment-dot { grid-column:1; justify-self:center; }
+  .moment { display:block; padding:32px 0; border-bottom:1px solid rgba(201,168,248,.07); }
+  .moment:last-child { border-bottom:none; }
+  .moment-dot { display:none; }
   .moment-spacer { display:none; }
+  .moment-content { text-align:left !important; }
   .sidenav { display:none; }
   .future-item { grid-template-columns:1fr; }
   .future-icon { display:none; }
@@ -778,6 +777,7 @@
 </script>
 </body>
 </html>
+
 
 
 
