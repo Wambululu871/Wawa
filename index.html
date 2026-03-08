@@ -408,19 +408,18 @@
     @keyframes fadeIn  { from{opacity:0}to{opacity:1} }
 
     @media(max-width:600px){
-      @media(max-width:600px){
-      .readonce-letter.revealed { max-height:5000px; }
-      .moment{grid-template-columns:48px 1fr; align-items:start;}
-      .moments::before{display:none;}
-      .moment:nth-child(odd) .moment-content,
-      .moment:nth-child(even) .moment-content{grid-column:2;text-align:left;}
-      .moment:nth-child(odd) .moment-dot,
-      .moment:nth-child(even) .moment-dot{grid-column:1;}
-      .moment-spacer{display:none;}
-      .sidenav{display:none;}
-      .future-item{grid-template-columns:1fr;}
-      .future-icon{display:none;}
-    }
+  .readonce-letter.revealed { max-height:5000px; }
+  .moments::before { display:none; }
+  .moment { grid-template-columns:48px 1fr; align-items:start; }
+  .moment:nth-child(odd) .moment-content,
+  .moment:nth-child(even) .moment-content { grid-column:2; text-align:left; }
+  .moment:nth-child(odd) .moment-dot,
+  .moment:nth-child(even) .moment-dot { grid-column:1; justify-self:center; }
+  .moment-spacer { display:none; }
+  .sidenav { display:none; }
+  .future-item { grid-template-columns:1fr; }
+  .future-icon { display:none; }
+}
   </style>
 </head>
 <body>
@@ -779,6 +778,7 @@
 </script>
 </body>
 </html>
+
 
 
 
